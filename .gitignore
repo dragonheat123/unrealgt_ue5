@@ -7,7 +7,7 @@ Content/Carla
 Content/Thesis
 Content/AutomotiveMaterials
 enc_temp_folder/*
-UnrealGT
+UnrealGT/*
 UnrealGT.zip
 
 # ignore 3rdparty slam deps for now
