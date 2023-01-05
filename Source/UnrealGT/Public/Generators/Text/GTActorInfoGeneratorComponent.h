@@ -113,8 +113,8 @@ public:
 
     virtual void DrawDebug(FViewport* Viewport, FCanvas* Canvas) override;
 
-#ifdef WITH_EDITOR
-    virtual bool CanEditChange(const FProperty* InProperty) const;
+#if WITH_EDITOR
+    virtual bool CanEditChange(const FProperty* InProperty) const override;
 #endif
 
 protected:
