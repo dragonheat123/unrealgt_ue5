@@ -49,7 +49,7 @@ bool FGTObjectFilter::MatchesActor(AActor *Actor) const {
     if (SkeletalMesh || !WildcardMeshName.IsEmpty()) {
       USkeletalMeshComponent *SkeletalMeshComponent =
           Cast<USkeletalMeshComponent>(ActorComponent);
-      if (SkeletalMeshComponent) {
+      if (SkeletalMeshComponent && SkeletalMeshComponent->SkeletalMesh) {
         if (SkeletalMesh &&
             SkeletalMeshComponent->SkeletalMesh == SkeletalMesh) {
           bMatchesSkeletalMesh = true;
